@@ -22,11 +22,11 @@ A smart contract for managing study groups on the Soroban platform. This contrac
 
 ### Functions
 
-- `create_group: Creates a new study group.
-- `join_group: Allows a participant to join an existing study group.
-- `contribute: Allows a participant to contribute to a study group.
-- `distribute_rewards: Distributes rewards to participants based on their contributions.
-- `view_group: Retrieves the details of a study group.
+- `create_group`: Creates a new study group.
+- `join_group`: Allows a participant to join an existing study group.
+- `contribute`: Allows a participant to contribute to a study group.
+- `distribute_rewards`: Distributes rewards to participants based on their contributions.
+- `view_group`: Retrieves the details of a study group.
 
 
 ## Getting Started
