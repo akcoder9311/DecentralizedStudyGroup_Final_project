@@ -28,7 +28,50 @@ We welcome contributions from anyone interested in making The Scholars even bett
 6. Push your changes to your fork and submit a pull request.
 
 ## Backend smart contract
+## Contract Functions
 
+### `create_group`
+
+Creates a new study group with the provided details.
+
+Parameters:
+- `creator`: Address of the group creator
+- `title`: Title of the study group
+- `description`: Description of the study group
+- `initial_contributors`: Initial contributions to the group
+
+### `join_group`
+
+Allows a user to join an existing study group.
+
+Parameters:
+- `group_id`: ID of the group to join
+
+### `contribute`
+
+Enables a participant to contribute to a study group.
+
+Parameters:
+- `group_id`: ID of the group to contribute to
+- `amount`: Amount to contribute
+
+### `distribute_rewards`
+
+Distributes rewards to group participants based on their contributions.
+
+Parameters:
+- `group_id`: ID of the group to distribute rewards for
+
+### `view_group`
+
+Views the details of a specific study group.
+
+Parameters:
+- `group_id`: ID of the group to view
+
+### `leave_group`
+
+Allows a participant to leave a study group.
 
 ## Community Guidelines
 
