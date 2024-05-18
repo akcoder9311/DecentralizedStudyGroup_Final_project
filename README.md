@@ -27,6 +27,9 @@ We welcome contributions from anyone interested in making The Scholars even bett
 5. Commit your changes with clear and descriptive messages.
 6. Push your changes to your fork and submit a pull request.
 
+## Backend smart contract
+
+
 ## Community Guidelines
 
 To maintain a positive and inclusive environment within The Scholars community, we ask all members to adhere to the following guidelines:
