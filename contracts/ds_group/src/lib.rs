@@ -1,6 +1,9 @@
 #![no_std]
 
-use soroban_sdk::{contract, contractimpl, contracttype, Address, Env, String, Vec, token, vec };
+use soroban_sdk::{contract, contractimpl, contracttype, token, vec, Address, Env, String, Vec };
+// use soroban_sdk::*;
+
+mod test;
 
 #[derive(Clone)]
 #[contracttype]
@@ -127,4 +130,25 @@ impl StudyGroupContract {
         env.storage().instance().get(&group_id).unwrap()
     }
 
+
+    // leave group from the 
+    pub fn leave_graoup(env:Env, from:Address, group_id:u64 ){
+          from.require_auth();
+
+         let mut group : StudyGroup  = env.storage().instance().get(&group_id).unwrap();
+
+        let mut new_participant:Vec<Address> = Vec::new(&env);
+         for i in group.participants {
+               if i != from {
+                   new_participant.push_back(i);
+               }
+         }
+
+
+        group.participants = new_participant;  
+
+        env.storage().instance().set(&group_id ,&group);
+   }
+
 }
+
