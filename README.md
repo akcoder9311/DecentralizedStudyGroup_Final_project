@@ -9,6 +9,7 @@ A smart contract for managing study groups on the Soroban platform. This contrac
 - **Contribute**: Contribute to a study group.
 - **View Group**: View details of a study group.
 - **Distribute Rewards**: Distribute rewards to participants based on their contributions.
+- **leave group** :this function allow to leave the group
 
 ### Storage Keys
 
@@ -27,6 +28,7 @@ A smart contract for managing study groups on the Soroban platform. This contrac
 - `contribute`: Allows a participant to contribute to a study group.
 - `distribute_rewards`: Distributes rewards to participants based on their contributions.
 - `view_group`: Retrieves the details of a study group.
+- `leave_group`:leave the group 
 
 
 ## Getting Started
